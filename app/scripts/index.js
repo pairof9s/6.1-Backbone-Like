@@ -3,18 +3,18 @@ var $ = require('jquery');
 var models = require('./models/liker');
 
 var likeButton = new models.Clicker();
-// console.log(likeButton.get('title'));
-// console.log(likeButton.get('number'));
+
 
 $('.buttonbox').on('click', function(event){
   event.preventDefault();
-  $('.buttonbox').text(likeButton.counter());
+  $('.buttonbox').text(likeButton.counter() + ' like');
 });
 
+
 $("#button1").mousedown(function() {
-    $(this).css({'background-image': 'linear-gradient(#ccc , #eee)'});
+    $(this).css({'background-image': 'linear-gradient(#ccc , #eee)', 'border': '1px solid #ccc'});
 });
 
 $("#button1").mouseup(function() {
-    $(this).css({'background-image': 'linear-gradient(#eee , #ccc)'});
+    $(this).css({'background-image': 'linear-gradient(#eee , #ccc)', 'border': '1px solid #ccc'});
 });

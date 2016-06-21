@@ -16,6 +16,8 @@ var Clicker = Backbone.Model.extend({
   },
 });
 
+console.log((new Clicker()).toJSON());
+
 module.exports = {
   'Clicker': Clicker
 };

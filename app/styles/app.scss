@@ -23,8 +23,13 @@ body {
   text-align: center;
 }
 
-.buttonbox {
+.centering {
   position: relative;
+  top: 50%;
+  transform: translateY(50%);
+}
+
+.buttonbox {
   margin: auto;
   padding: auto;
   width: 250px;
@@ -32,4 +37,5 @@ body {
   border: 1px solid #888;
   border-radius: 2px;
   background-image: linear-gradient(#eee , #ccc);
+  line-height: 100px;
 }
